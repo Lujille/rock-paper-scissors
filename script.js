@@ -1,7 +1,7 @@
 let human = 0;
 let computer = 0;
 
-
+// funtion to generate a random choices for computer
 function computerPlay(){
     const weapon = ["rock", "paper", "scissors"];
     const random = Math.floor(Math.random() * weapon.length);
@@ -9,9 +9,8 @@ function computerPlay(){
     return weapon[random];
 }
 
+// main logic of the game
 function playRound(playerSelection, computerSelection){
- 
-   
     if(playerSelection===computerSelection){
         return `Its tie! ${playerSelection} = ${computerSelection}`;
     }
@@ -27,6 +26,7 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
+//function to store the score
 function game(){
     let attempt = 5;
 
