@@ -1,7 +1,7 @@
 let human = 0;
 let computer = 0;
 
-// funtion to generate a random choices for computer
+// function to generate a random choices for computer
 function computerPlay(){
     const weapon = ["rock", "paper", "scissors"];
     const random = Math.floor(Math.random() * weapon.length);
@@ -26,7 +26,7 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-//function to store the score
+//function to loop the game and show the result at the end
 function game(){
     let attempt = 5;
 
