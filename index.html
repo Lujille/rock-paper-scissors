@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="#">
-    <title>rock-paper-scissors</title>
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <title>rock-paper-scissors</title>
+  <script src="https://kit.fontawesome.com/334f53df79.js" crossorigin="anonymous"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="title">ROCK PAPER SCISSORS</div>
+  <div class="main">
+    <button id="rock"><i class="fa fa-hand-rock-o fa-5x" aria-hidden="true"></i></button>
+    <button id="paper"><i class="fa fa-hand-paper-o fa-5x" aria-hidden="true"></i></button>
+    <button id="scissors"><i class="fa fa-hand-scissors-o fa-5x" aria-hidden="true"></i></button>
+    <h1>Score :</h1>
+    <div id="score-info">Try to reach 5 points before the enemy</div>
+    <div id="player-score">Player : 0</div>
+    <div id="computer-score">Computer : 0</div>
     
+  </div>
+  <div class="footer">
+    Copyright © 
+    <script>document.writeln(new Date().getFullYear())</script> 
+    Leuchtend
+    <a href="https://github.com/leuchtend5">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+  <div id="end-game" class="end-game active">
+    <div id="end-message"></div>
+    <button id="btn-restart" class="btn-restart">Restart Game</button>
+  </div>
+  <div id="overlay-end" class="overlay-end active"></div>
 </body>
 </html>
